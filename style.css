@@ -30,8 +30,6 @@ body{
 }
 
 form {
-    width: 600px;
-    height: 800px;
     text-align: left;
 }
 
@@ -53,4 +51,21 @@ form {
     display: inline-block;
     border-radius: 2px;
     font-size: 12px;
+  }
+
+  .form-field:focus-within {
+    position: relative;
+  }
+  
+  .form-field:focus-within label {
+    position: absolute;
+    top: -0.5em;
+    left: 10px;
+    font-size: 12px;
+    background: white;
+    padding: 0 5px;
+  }
+  
+  .form-field:focus-within input {
+    padding: 8px 5px 5px;
   }
