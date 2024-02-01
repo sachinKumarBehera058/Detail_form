@@ -1,8 +1,14 @@
 * {
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: 'Poppins';
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -37,36 +43,14 @@ form {
     font-weight: 500;
 }
 
-
-
-
-
-.floating-label-group {
-	position: relative;
-	margin-top: 15px;
-	margin-bottom: 25px;
-
-	.floating-label {
-		font-size: 13px;
-		color: #cccccc;
-		position: absolute;
-		pointer-events: none;
-		top: 9px;
-		left: 12px;
-		transition: all 0.1s ease;
-	}
-
-	input:focus ~ .floating-label,
-	input:not(:focus):valid ~ .floating-label {
-		top: -15px;
-		bottom: 0px;
-		left: 0px;
-		font-size: 11px;
-		opacity: 1;
-		color: #404040;
-	}
-}
-
-.row {
-	margin-top: 50px;
-}
+.sub-btn {
+    background-color: #6C40B3; 
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 12px;
+  }
