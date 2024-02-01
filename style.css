@@ -6,10 +6,10 @@
 }
 
 
-body{
-    width: 100vw;
-    height: 100vh;
-}
+/* body{
+    /* width: 100vw;
+    height: 100vh; 
+} */
 
 
 .heading {
@@ -22,11 +22,18 @@ body{
     justify-content: center;
 }
 
+.image{
+    display: flex;
+    position: fixed;
+    right: 100px;
+    bottom: 175px;
+}
+
 .info {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 60px;
+    margin: 80px;
 }
 
 form {
@@ -69,3 +76,23 @@ form {
   .form-field:focus-within input {
     padding: 8px 5px 5px;
   }
+
+
+
+  @media only screen and (max-width:1110px)
+  {
+    .image{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width:768px)
+  {
+    .heading{
+        margin-bottom: 60px;
+    }
+    .info{
+        margin: 0px;
+    }
+  }
+
