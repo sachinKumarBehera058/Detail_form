@@ -16,9 +16,9 @@
     <div class="heading">Details Form</div>
     <img src="./Images/bsg.png" alt="bg-image" class="image">
     <div class="info">
-        <form action="#">
+        <form action="#" onSubmit="if(!confirm('Do you really want to submit the form?')){return false;}">
             <fieldset class="all-Details">
-                <div class="form-field">
+                <div class="form-field ">
                     <label for="fname">Name</label>
                     <input type="text" id="name" maxlength="32" name="name"
                         pattern="(^[A-Za-z]{1,16})([ ]{0,1})([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})"
@@ -31,7 +31,7 @@
                         title="Invalid email address" placeholder="Email" required>
                 </div>
                 <br>
-                <label for="gender">Sex:</label>
+                <label for="gender">Sex</label>
                 <input type="radio" id="html" name="gender" value="Male" required>
                 <label for="html">Male</label>
                 <input type="radio" id="css" name="gender" value="Female">
@@ -39,17 +39,17 @@
                 <br><br>
                 <div class="form-field">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" pattern="^([7-9]{1}[0-9]{9})$"
-                        title="Invalid Phone number" placeholder="+91 XXXXXXXXXX" required>
+                    <input type="tel" id="phone" name="phone" pattern="^([6-9]{1}[0-9]{9})$"
+                        title="Invalid Phone number" placeholder="+91-XXXXXXXXXX" required>
                 </div>
 
                 <br>
 
                 <input id="checkbox" type="checkbox" required>
-                <label for="checkbox"> I agree to these <a href="">Terms and Conditions</a>.</label>
+                <label for="checkbox" class="daba"> I agree to these <a href="">Terms and Conditions</a>.</label>
                 <br><br>
 
-                <input type="submit" class="sub-btn" value="Submit">
+                <input type="submit" class="sub-btn" value="Submit" />
             </fieldset>
         </form>
     </div>
