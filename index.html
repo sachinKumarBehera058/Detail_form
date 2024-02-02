@@ -18,21 +18,21 @@
     <div class="info">
         <form action="#" onSubmit="if(!confirm('Do you really want to submit the form?')){return false;}">
             <fieldset class="all-Details">
-                <div class="form-field ">
+                <div class="form-field boxo">
                     <label for="fname">Name</label>
-                    <input type="text" id="name" maxlength="32" name="name"
+                    <input type="text" class="boxo" id="name" maxlength="32" name="name"
                         pattern="(^[A-Za-z]{1,16})([ ]{0,1})([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})"
-                        title="Enter your name properly" placeholder="Name" required>
+                        title="Enter your name properly" placeholder="Enter Name" required>
                 </div>
                 <br>
                 <div class="form-field">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                        title="Invalid email address" placeholder="Email" required>
+                    <input type="email" class="boxo" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                        title="Invalid email address" placeholder="Enter Email" required>
                 </div>
                 <br>
                 <fieldset class="gen">
-                    <legend class="upgen">Gender</legend>
+                    <p class="upgen">Gender</p>
                     <div><input type="radio" id="html" name="gender" value="Male" required>
                         <label for="html">Male</label>
                     </div>
@@ -44,8 +44,8 @@
                 <br>
                 <div class="form-field">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" pattern="^([6-9]{1}[0-9]{9})$" title="Invalid Phone number"
-                        placeholder="9756XXXXXX" required>
+                    <input type="tel" class="boxo" id="phone" name="phone" pattern="^([6-9]{1}[0-9]{9})$" title="Invalid Phone number"
+                        placeholder="Enter 10-digit 9756XXXXXX" required>
                 </div>
 
                 <br>
