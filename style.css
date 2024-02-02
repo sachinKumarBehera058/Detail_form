@@ -38,7 +38,19 @@ form {
 }
 
 .lable {
-    font-weight: 500;
+    font-weight: 400;
+}
+
+.gen{
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+  width: 70%;
+}
+
+.upgen{
+  font-size: 14px;
+  padding-left: 5px;
 }
 
 .sub-btn {
@@ -53,13 +65,17 @@ form {
     font-size: 12px;
   }
 
+  .sub-btn:hover{
+    background-color: #4f11b4;
+  } 
+
   .form-field:focus-within {
     position: relative;
   }
   
   .form-field:focus-within label {
     position: absolute;
-    top: -0.5em;
+    top: -0.7em;
     left: 10px;
     font-size: 12px;
     background: white;
@@ -72,8 +88,14 @@ form {
 
   .daba{
     font-size: 14px;
+    color: rgb(60, 60, 60);
   }
 
+  /* .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
 
   @media only screen and (max-width:1110px)
   {
@@ -90,5 +112,11 @@ form {
     .info{
         margin: 0px;
     }
+
+    .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   }
 

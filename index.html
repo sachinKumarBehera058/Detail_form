@@ -22,34 +22,43 @@
                     <label for="fname">Name</label>
                     <input type="text" id="name" maxlength="32" name="name"
                         pattern="(^[A-Za-z]{1,16})([ ]{0,1})([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})"
-                        placeholder="Name" required>
+                        title="Enter your name properly" placeholder="Name" required>
                 </div>
                 <br>
                 <div class="form-field">
-                    <label for="email">Email Id</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                         title="Invalid email address" placeholder="Email" required>
                 </div>
                 <br>
-                <label for="gender">Sex</label>
-                <input type="radio" id="html" name="gender" value="Male" required>
-                <label for="html">Male</label>
-                <input type="radio" id="css" name="gender" value="Female">
-                <label for="css">Female</label>
-                <br><br>
+                <fieldset class="gen">
+                    <legend class="upgen">Gender</legend>
+                    <div><input type="radio" id="html" name="gender" value="Male" required>
+                        <label for="html">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="css" name="gender" value="Female">
+                        <label for="css">Female</label>
+                    </div>
+                </fieldset>
+                <br>
                 <div class="form-field">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" pattern="^([6-9]{1}[0-9]{9})$"
-                        title="Invalid Phone number" placeholder="+91-XXXXXXXXXX" required>
+                    <input type="tel" id="phone" name="phone" pattern="^([6-9]{1}[0-9]{9})$" title="Invalid Phone number"
+                        placeholder="9756XXXXXX" required>
                 </div>
 
                 <br>
 
-                <input id="checkbox" type="checkbox" required>
-                <label for="checkbox" class="daba"> I agree to these <a href="">Terms and Conditions</a>.</label>
-                <br><br>
+                <div>
+                    <input id="checkbox" type="checkbox" required>
+                <label for="checkbox" class="daba"> I agree that all details were correctly filled.</label>
+                </div>
+                <br>
 
-                <input type="submit" class="sub-btn" value="Submit" />
+                <div class="btn">
+                    <input type="submit" class="sub-btn" value="Submit" />
+                </div>
             </fieldset>
         </form>
     </div>
