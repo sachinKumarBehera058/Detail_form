@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Details Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+
 </head>
 
 <body class="app">
@@ -17,52 +17,62 @@
     <img src="./Images/bsg.png" alt="bg-image" class="image">
     <div class="info">
         <form action="#" onSubmit="if(!confirm('Do you really want to submit the form?')){return false;}">
-            <fieldset class="all-Details">
+            <!-- <fieldset class="all-Details"> -->
                 <div class="form-field boxo">
-                    <label for="fname">Name</label>
+                    <label for="fname" id="n">Name</label>
                     <input type="text" class="boxo" id="name" maxlength="32" name="name"
                         pattern="(^[A-Za-z]{1,16})([ ]{0,1})([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})"
-                        title="Enter your name properly" placeholder="Enter Name" required>
+                        title="Enter your name properly" placeholder="Name"
+                        onfocus="document.getElementById('n').style.display='block'"
+                        onblur="document.getElementById('n').style.display='none'" required>
                 </div>
                 <br>
                 <div class="form-field">
-                    <label for="email">Email</label>
+                    <label for="email" id="e">Email</label>
                     <input type="email" class="boxo" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                        title="Invalid email address" placeholder="Enter Email" required>
+                        title="Invalid email address" placeholder="Email" 
+                        onfocus="document.getElementById('e').style.display='block'"
+                        onblur="document.getElementById('e').style.display='none'" required>
                 </div>
                 <br>
                 <fieldset class="gen">
-                    <p class="upgen">Gender</p>
-                    <div><input type="radio" id="html" name="gender" value="Male" required>
-                        <label for="html">Male</label>
+                    <legend class="upgen">Gender</legend>
+                    <div><input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
                     </div>
                     <div>
-                        <input type="radio" id="css" name="gender" value="Female">
-                        <label for="css">Female</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div><input type="radio" id="other" name="gender" value="Other" required>
+                        <label for="other">Others</label>
                     </div>
                 </fieldset>
                 <br>
                 <div class="form-field">
-                    <label for="phone">Phone</label>
-                    <input type="tel" class="boxo" id="phone" name="phone" pattern="^([6-9]{1}[0-9]{9})$" title="Invalid Phone number"
-                        placeholder="Enter 10-digit 9756XXXXXX" required>
+                    <label for="phone" id="p">Phone</label>
+                    <input type="tel" class="boxo" id="phone" name="phone" pattern="^([6-9]{1}[0-9]{9})$"
+                        title="Invalid Phone number" placeholder="Phone number" 
+                        onfocus="document.getElementById('p').style.display='block'"
+                        onblur="document.getElementById('p').style.display='none'" required>
                 </div>
 
                 <br>
 
                 <div>
                     <input id="checkbox" type="checkbox" required>
-                <label for="checkbox" class="daba"> I agree that all details were correctly filled.</label>
+                    <label for="checkbox" class="daba"> Terms and Conditions* </label>
                 </div>
                 <br>
 
                 <div class="btn">
                     <input type="submit" class="sub-btn" value="Submit" />
                 </div>
-            </fieldset>
+            <!-- </fieldset> -->
         </form>
     </div>
 
 </body>
+<script src="main.js"></script>
 
 </html>
