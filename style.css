@@ -35,7 +35,7 @@ form {
   text-align: left;
   padding: 20px;
   margin: 20px;
-  width: 400px;
+  /* width: 350px; */
   height: 400px;
   /* border: 1px solid #6C40B3; */
 }
@@ -93,9 +93,9 @@ form {
   padding: 0 5px;
 }
 
-/* input:focus{
-  background-color: #f7def4;
-} */
+input:focus::placeholder{
+  opacity: 0;
+}
 
 input:focus-visible {
   outline: 2px solid #4f11b4;
