@@ -77,7 +77,7 @@ form {
 }
 
 .sub-btn:hover {
-  background-color: #4f11b4;
+  background-color: #6C40B3;
 }
 
 .form-field:focus-within {
@@ -97,14 +97,18 @@ input:focus::placeholder{
   opacity: 0;
 }
 
+input::placeholder{
+  padding-left: 8px;
+}
+
 input:focus-visible {
-  outline: 2px solid #4f11b4;
+  outline: 2px solid #6C40B3;
   border: none;
 }
 
 fieldset {
   display: flex;
-  border: 1px solid #4f11b4;
+  border: 1px solid #6C40B3;
   justify-content: space-evenly;
   width: 300px;
 }
